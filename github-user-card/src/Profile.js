@@ -4,18 +4,19 @@ class Profile extends React.Component {
 
     render() {
         return(
-            <div className="container mx-auto flex flex-row flex-wrap mt-4 text-base">
+            <div style={{fontFamily: 'Electrolize'}} className="md:container md:mx-auto w-300 flex flex-wrap flex-row items-center justify-evenly text-base p-0 border-white rounded border-solid bg-white m-2 p-4 font-normal italic text-pink-700">
                 <div>
-                    <img className="w-32 h-32 rounded-full mx-auto"src={this.props.userData.avatar_url} alt="profile pic"/>
+                    <img className="w-48 h-auto mx-auto rounded-full"src={this.props.userData.avatar_url} alt="profile pic"/>
                 </div>
-                <div className="bio ml-2 p-2 font-extralight italic">
-                    <h2>Name: {this.props.userData.name}</h2>
-                    <h3>Bio : {this.props.userData.bio}</h3>
-                    <p>Location: {this.props.userData.location}</p>
-                    <p>Profiles Tracked: {this.props.userData.following}</p>
-                    <p>Followed By: {this.props.userData.followers}</p>
-                </div>
+            <div className="text-center text-xs p-4">
+                <h2>{this.props.userData.name}</h2>
+                <p>{this.props.userData.bio}</p>
+                <p>{this.props.userData.location}</p>
+                <p>Followed By: {this.props.userData.followers}</p>
+                <p>Profiles Tracked: {this.props.userData.following}</p>
+
             </div>
+        </div>
         )
     }
 }
