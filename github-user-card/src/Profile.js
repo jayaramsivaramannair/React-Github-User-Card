@@ -4,7 +4,7 @@ class Profile extends React.Component {
 
     render() {
         return(
-            <div style={{fontFamily: 'Electrolize'}} className="md:container md:mx-auto w-300 flex flex-wrap flex-row items-center justify-evenly text-base p-0 border-white rounded border-solid bg-white m-2 p-4 font-normal italic text-pink-700">
+            <div style={{fontFamily: 'Electrolize'}} className="md:container md:mx-auto w-300 flex flex-wrap flex-row items-center justify-evenly text-base p-0 border-white rounded border-solid bg-white m-2 p-4 font-normal italic text-indigo-300">
                 <div>
                     <img className="w-48 h-auto mx-auto rounded-full"src={this.props.userData.avatar_url} alt="profile pic"/>
                 </div>
